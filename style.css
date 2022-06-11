@@ -1,0 +1,16 @@
+.heading {
+    width: 100%;
+    color: white;
+}
+
+.heading:hover {
+    cursor: help;
+}
+
+.note {
+    color: black;
+}
+
+.object-name {
+    width: 500px;
+}
