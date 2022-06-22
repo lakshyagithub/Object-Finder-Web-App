@@ -3,7 +3,7 @@ objects = [];
 
 function setup(){
     canvas = createCanvas(300,290);
-    canvas.position(480,250);
+    canvas.center();
     video = createCapture(VIDEO);
     video.size(300,290);
     video.hide();
@@ -11,7 +11,7 @@ function setup(){
 function start(){
     object_Detector = ml5.objectDetector('cocossd',modelLoaded);
     document.getElementById("status").innerHTML = "Status: Detecting Object";
-    input_text = document.getElementById("input_id").value;
+    input_text = document.getElementById("input").value;
 }
 function modelLoaded(){
     console.log("Model_Loaded");
