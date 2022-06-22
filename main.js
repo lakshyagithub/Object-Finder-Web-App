@@ -1,5 +1,6 @@
 Status = "";
 input_text = "";
+objects = [];
 
 function setup() {
   canvas = createCanvas(400, 400);
@@ -22,4 +23,17 @@ function modelLoaded() {
 
 function draw() {
   image(video, 0, 0, 400, 400);
+  if (Status != "") {
+    for (let index = 0; index < objects.length; index++) {
+      
+    }
+  }
+}
+
+function gotResults(error, results) {
+  if (error) {
+    console.error(error);
+  }
+  console.log(results);
+  objects = results;
 }
