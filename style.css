@@ -1,16 +1,20 @@
-.heading {
+.heading
+{
     width: 100%;
     color: white;
 }
 
-.heading:hover {
+.heading:hover
+{
     cursor: help;
 }
 
-.note {
+.note
+{
     color: black;
 }
 
-.object-name {
+.object-name
+{
     width: 500px;
 }
